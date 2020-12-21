@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+    <meta name="description" content="Calculator with skeuomorphic design">
+    <title>Skeuomorphic Calculator</title>
+</head>
+<body ontouchstart="">
+    <div class="maindiv">
+        <div class="hdiv screendiv">
+            <p onclick="deleteLast()" id="display">0</p>
+        </div>
+        <div class="hdiv">
+            <button class="differentcolor" onclick="resetAll()">C</button>
+            <button class="differentcolor" onclick="multiplyWithMinusOne()">±</button>
+            <button class="differentcolor" onclick="operationButton('divide')">÷</button>
+            <button class="differentcolor" onclick="operationButton('multiply')">×</button>
+        </div>
+        <div class="hdiv">
+            <button onclick="buttonPress('7')">7</button>
+            <button onclick="buttonPress('8')">8</button>
+            <button onclick="buttonPress('9')">9</button>
+            <button class="differentcolor" onclick="operationButton('subtract')">−</button>
+        </div>
+        <div class="hdiv">
+            <button onclick="buttonPress('4')">4</button>
+            <button onclick="buttonPress('5')">5</button>
+            <button onclick="buttonPress('6')">6</button>
+            <button class="differentcolor" onclick="operationButton('add')">+</button>
+        </div>
+        <div class="hdiv">
+            <button onclick="buttonPress('1')">1</button>
+            <button onclick="buttonPress('2')">2</button>
+            <button onclick="buttonPress('3')">3</button>
+            <button class="tallerbutton" onclick="finishOperation()">=</button>
+        </div>
+        <div class="hdiv">
+            <button class="widerbutton" onclick="buttonPress('0')">0</button>
+            <button class="hiddenbutton"></button>
+            <button onclick="buttonPress('.')">.</button>
+            <button class="hiddenbutton"></button>
+        </div>
+    </div>
+</body>
+</html>
